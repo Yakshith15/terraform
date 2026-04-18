@@ -1,0 +1,10 @@
+region           = "us-east-1"
+instance_name    = "free-tier-instance"
+instance_type    = "t2.micro"
+root_volume_size = 8
+root_volume_type = "gp2"
+
+tags = {
+  Environment = "dev"
+  Owner       = "your-name"
+}
