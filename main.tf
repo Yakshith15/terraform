@@ -1,4 +1,4 @@
-resource "aws_instance" "free_tier" {
+resource "aws_instance" "ec2_instance" {
   ami           = data.aws_ami.amazon_linux_2023.id
   instance_type = var.instance_type
 

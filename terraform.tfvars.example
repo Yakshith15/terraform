@@ -6,5 +6,4 @@ root_volume_type = "gp2"
 
 tags = {
   Environment = "dev"
-  Owner       = "your-name"
 }

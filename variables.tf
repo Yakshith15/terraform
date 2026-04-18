@@ -1,7 +1,7 @@
 variable "region" {
   description = "AWS region to deploy into"
   type        = string
-  default     = "us-east-1"
+  default     = "ap-south-2"
 }
 
 variable "instance_name" {
@@ -11,7 +11,7 @@ variable "instance_name" {
 }
 
 variable "instance_type" {
-  description = "EC2 instance type (t2.micro is free tier eligible)"
+  description = "EC2 instance type"
   type        = string
   default     = "t2.micro"
 }
@@ -31,5 +31,7 @@ variable "root_volume_type" {
 variable "tags" {
   description = "Additional tags to apply to resources"
   type        = map(string)
-  default     = {}
+  default = {
+    ManagedBy = "Terraform"
+  }
 }
